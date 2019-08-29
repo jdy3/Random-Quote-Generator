@@ -1,10 +1,12 @@
 body {
   background: url(https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  display: flex;
-  align-items: center;
   }
 
 #main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: 'Crimson Text', serif;
   font-size: 45px;
   display: flex;
@@ -22,7 +24,6 @@ body {
 h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1em;
-  padding-top: 1em;
   user-select: none;
 }
 
