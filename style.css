@@ -1,26 +1,35 @@
 body {
   background: url(https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+#main {
+  font-family: 'Crimson Text', serif;
   font-size: 45px;
- }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
 @media (max-width: 750px) {
+  #main {
   font-size: 22.5px;
+}
 }
 
 h1 {
-  font-family: 'Crimson Text', serif;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1em;
-  text-align: center;
-  padding-top: 3em;
+  padding-top: 1em;
   user-select: none;
 }
 
 h2 {
-  font-family: 'Crimson Text', serif;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.65em;
-  text-align: center;
   user-select: none;
 }
 
@@ -29,8 +38,9 @@ h2 {
   font-family: 'Satisfy', cursive;
   color: rgb(255, 255, 255);
   font-size: 0.75em;
+  margin-top: 1.5em;
+  width: 80%;
   text-align: center;
-  margin: 1em 3em 0.5em 3em;
   padding: 1em;
   border-radius: 0.2em;
   user-select: none;
@@ -40,7 +50,9 @@ h2 {
   display: flex;
   justify-content: space-around;
   font-size: 0.4em;
-  padding: 1em 6em 0em 6em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 85%;
 }
 
 .buttons {
@@ -54,15 +66,11 @@ h2 {
   height: 2.1em;
   width: 6em;
   box-shadow: 0 10px 20px rgba(1,121,11,0.19), 0 6px 6px rgba(1,121,11,0.23);
-   user-select: none;
+  user-select: none;
 }
 
 .buttons:hover {
   color: rgb(0,255,0);
   box-shadow: 0 10px 20px rgba(255,255,255,0.19), 0 6px 6px rgba(255,255,255,0.23);
-}
-
-#funnyButton, #insightfulButton, #wiseButton, #sadButton {
-  user-select: none;
 }
 
